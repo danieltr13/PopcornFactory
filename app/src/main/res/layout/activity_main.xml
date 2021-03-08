@@ -32,9 +32,9 @@
 
     <Button
         android:id="@+id/button_get_started"
-        android:layout_width="219dp"
+        android:layout_width="237dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="39dp"
         android:text="@string/button_Get_Me_In"
         android:background="@drawable/round_button"
         android:textColor="@color/blackF"

@@ -5,37 +5,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/blackF"
     tools:context=".MovieDescription">
-    
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/iv_img_movie"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/bones"/>
+    <ImageView
+        android:id="@+id/iv_img_movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bonesheader"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
 
         <TextView
             android:id="@+id/tv_movie_title"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
             android:layout_height="wrap_content"
             android:textColor="@color/GetMeInButton"
             android:text="Bones"
-            android:textSize="20sp"
-            android:gravity="center"/>
+            android:layout_marginLeft="15dp"
+            android:textSize="25sp"/>
 
-        <TextView
-            android:id="@+id/tv_movie_des"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Hellooooooooooooooooooooooooooo"
-            android:layout_marginLeft="20dp"
-            android:textSize="20sp"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="2.5dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:background="@color/GetMeInButton"/>
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_movie_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hellooooooooooooooooooooooooooo"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/LoginDescription"/>
 </LinearLayout>
