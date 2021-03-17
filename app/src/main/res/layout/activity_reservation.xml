@@ -4,17 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/blackF"
-    tools:context=".MovieDescription">
-
-    <ImageView
-        android:id="@+id/iv_img_movie"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:scaleType="centerCrop"
-        android:src="@drawable/bonesheader"/>
+    android:orientation="vertical"
+    tools:context=".ReservationActivity">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -23,11 +15,10 @@
         android:layout_marginTop="20dp">
 
         <TextView
-            android:id="@+id/tv_movie_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/GetMeInButton"
-            android:text="Bones"
+            android:text="Reservation details"
             android:layout_marginLeft="15dp"
             android:textSize="25sp"/>
 
@@ -39,35 +30,27 @@
             android:background="@color/GetMeInButton"/>
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/tv_movie_des"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Hellooooooooooooooooooooooooooo"
-        android:layout_marginLeft="20dp"
-        android:textSize="15sp"
-        android:layout_marginTop="20dp"
-        android:textColor="@color/LoginDescription"/>
-
-    <Button
-        android:id="@+id/buyTickets"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/round_button"
-        android:textColor="@color/blackF"
-        android:layout_gravity="center"
-        android:paddingHorizontal="@dimen/paddingButton"
-        android:layout_marginTop="10dp"
-        android:text="Buy my ticket!"/>
 
     <TextView
-        android:id="@+id/seatsLeft"
+        android:id="@+id/titleTv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/grisclaro"
-        android:layout_marginTop="7dp"
+        android:text="Movie: "
         android:textAlignment="center"
-        android:textStyle="italic"
+        android:textColor="@color/GetMeInButton"
+        android:textSize="17sp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/seatTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seat: "
+        android:textAlignment="center"
+        android:textColor="@color/GetMeInButton"
+        android:textSize="17sp"
+        android:layout_marginTop="20dp"
         />
 
 </LinearLayout>
